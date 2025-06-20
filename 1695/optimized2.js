@@ -1,5 +1,5 @@
 function maximumUniqueSubarray(nums) {
-  const seen = new Uint8Array(10001)
+  const seen = new Int8Array(10001)
   let left = 0
   let sum = 0
   let maxSum = 0
