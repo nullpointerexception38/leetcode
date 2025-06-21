@@ -2,7 +2,7 @@
 console.log(maximumBeauty([1,1,1,1], 1))
 
 function maximumBeauty(nums, k) {
-  nums.sort((a, b) => a - b)
+  nums = new Int32Array(nums).sort()
   const twoKs = k + k
   let left = 0
   let sum = 0
