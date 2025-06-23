@@ -27,7 +27,6 @@ function kMirror() {
     if (nums.length >= 30) {
       return nums
     }
-    let count = 0
     for (const str of strs) {
       const num = parseInt(str, base)
       if (isPalindrome(String(num))) {
@@ -37,7 +36,6 @@ function kMirror() {
         }
       }
     }
-    return count
   }
   const map = {}
   for (let base = 2; base <= 9; base++) {
