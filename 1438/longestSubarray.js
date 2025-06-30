@@ -13,8 +13,8 @@ function longestSubarray(nums, limit) {
       minQueue.pop()
     }
     minQueue.push(i)
-    let min = nums[minQueue[0]]
     let max = nums[maxQueue[0]]
+    let min = nums[minQueue[0]]
     while (max - min > limit) {
       left++
       if (maxQueue[0] < left) {
@@ -23,8 +23,8 @@ function longestSubarray(nums, limit) {
       if (minQueue[0] < left) {
         minQueue.shift()
       }
-      min = nums[minQueue[0]]
       max = nums[maxQueue[0]]
+      min = nums[minQueue[0]]
     }
     maxLength = Math.max(maxLength, i - left + 1)
   }
