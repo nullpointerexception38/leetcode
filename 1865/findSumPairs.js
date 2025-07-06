@@ -35,7 +35,7 @@ class FindSumPairs {
     const { nums1, countMap } = this
     let sum = 0
     for (const num of nums1) {
-      sum += countMap.get(target - num) ?? 0
+      sum += countMap.get(target - num)
     }
     return sum
   }
