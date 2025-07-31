@@ -14,8 +14,8 @@ function buildArray(nums) {
     nums[i] = a + (b * n)
   }
   for (let i = 0; i < n; i++) {
-    const num = nums[i]
-    nums[i] = (num - (num % n)) / n
+    const c = nums[i]
+    nums[i] = (c - (c % n)) / n
   }
   return nums
 }
